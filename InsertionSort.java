@@ -20,9 +20,6 @@ public class InsertionSort implements SortInterface{
 		return array;
 	}
 	
-	public void updateHistogram(){
-		
-	}
 	
 	private void swap(int a, int b){
 		int temp = array[a];
