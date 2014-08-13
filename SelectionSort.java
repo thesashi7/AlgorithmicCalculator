@@ -1,7 +1,10 @@
 
 public class SelectionSort implements SortInterface
 {
-    public static void sort(int []elements)
+    /**
+     * Sorts elements in an increasing order by comparing each element from the start index (till the end) to the other elements in increasing index.   
+    **/
+    public void sort(int []elements)
     {
         int temp;
         
