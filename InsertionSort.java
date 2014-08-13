@@ -2,29 +2,20 @@ package AlgoCalc;
 
 public class InsertionSort implements SortInterface{
 	
-	private int[] array = null;
-	int j = 0;
-	
-	InsertionSort(int[] array){
-		this.array = array;
-	}
-	
-	public int[] sort(){
-		for(int i=1; i<array.length; i++){
+	public void sort(int [] elements){
+		int temp,j;
+		temp=0;
+		j=0;
+		
+		for(int i=1; i<elements.length; i++){
 			j = i;
-			while(j>0 && array[j-1] > array[j]){
-				swap(j-1, j);
+			while(j>0 && elements[j-1] > elements[j]){
+				temp = elements[j];
+				elements[j] = elements[j-1];
+				elements[j-1] = temp;
 				j--;
 			}
 		}
-		return array;
-	}
-	
-	
-	private void swap(int a, int b){
-		int temp = array[a];
-		array[a] = array[b];
-		array[b] = temp;
 	}
 	
 }
