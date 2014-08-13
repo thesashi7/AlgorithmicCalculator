@@ -1,8 +1,13 @@
 
+/**
+ * This is a SelectionSort class.
+ ** Sorts elements in an increasing order by comparing each element from the start index (till the end) to the other elements in increasing index.   
+**/
+
 public class SelectionSort implements SortInterface
 {
     /**
-     * Sorts elements in an increasing order by comparing each element from the start index (till the end) to the other elements in increasing index.   
+    * Sorts elements in a linear fashion from smallest to largest.
     **/
     public void sort(int []elements)
     {
