@@ -5,7 +5,7 @@ public class InsertionSort implements SortInterface{
 	public void sort(int [] elements){
 		int temp,j;
 		temp=0;
-		j=0;
+		
 		
 		for(int i=1; i<elements.length; i++){
 			j = i;
